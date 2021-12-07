@@ -1,0 +1,6 @@
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+argocd login --core
+kubectl config get-contexts -o name
+argocd cluster add anbossaraksagw
+https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/
